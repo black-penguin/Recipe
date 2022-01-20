@@ -18,6 +18,11 @@ export default function Home({ navigation }) {
                 style={styles.nav}
                 onPress={() => navigation.navigate('Shopping')}
             />
+            <Button
+                title="email"
+                style={styles.nav}
+                onPress={() => navigation.navigate('Email')}
+            />
         </ImageBackground>
   );
 }
@@ -36,5 +41,8 @@ const styles = StyleSheet.create({
     //   textAlign: "center",
       backgroundColor: "#000000c0"
     },
+    nav: {
+      margin:30
+    }
   });
   

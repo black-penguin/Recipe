@@ -4,9 +4,9 @@ import { Text, View, Button} from 'react-native';
 export default function RecList({route, navigation }) {
   const data = route.params.data.recipeList;
   const list = () => {
-    return data.map((element) => {
+    return data.map((element, key) => {
       return (
-            <Button key={element.key}
+            <Button key={key}
                 title={element.name}
                 onPress={() => navigation.navigate('Recipe',{ data: element})}
             />
