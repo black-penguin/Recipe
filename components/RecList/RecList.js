@@ -1,5 +1,8 @@
 import * as React from 'react';
-import { Text, View, Button} from 'react-native';
+import { Text, ImageBackground, Button, StyleSheet} from 'react-native';
+
+const image = { uri: "https://wallpapercave.com/wp/wp1955108.jpg" };
+
 
 export default function RecList({route, navigation }) {
   const data = route.params.data.recipeList;
@@ -14,8 +17,15 @@ export default function RecList({route, navigation }) {
       });
     }
   return (
-    <View>
-            {list()}
-    </View>
+    <ImageBackground source={image} resizeMode="cover" style={styles.image}>
+      {list()}
+    </ImageBackground>
   );
 }
+
+const styles = StyleSheet.create({
+    image: {
+      flex: 1,
+      justifyContent: "center"
+    }
+  })

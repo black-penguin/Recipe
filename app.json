@@ -1,11 +1,12 @@
 {
   "expo": {
-    "name": "ReactNativeDemo",
-    "slug": "ReactNativeDemo",
+    "name": "Austin's Recipe",
+    "slug": "austinrecipe",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "description": ""
   },
   "name": "ReactNativeDemo"
 }

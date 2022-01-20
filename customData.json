@@ -78,5 +78,7 @@
                 }
             }
     ],
-    "Shopping":{}
+    "shopping":[
+        "hi"
+    ]
 }

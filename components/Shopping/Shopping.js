@@ -1,12 +1,29 @@
 import * as React from 'react';
-import { Text, View} from 'react-native';
+import { Text, View, Button} from 'react-native';
+const data = require('../../customData.json');
 
 export default function Shopping() {
+  const shoppingList = () => {
+    return data.shopping.map((element, key) => {
+      return (
+          <Text key={key}>{element}</Text>
+        );
+      });
+    }
+    const resetList = () => {
+      console.log("reset data");
+      let reset=["pie"];
+      // data.writeFile('PartyInfo.json', reset);
+
+    }
+    
   return (
     <View>
-      <Text>
-        Shopping List
-      </Text>
+      <Button
+                title="Clear Shopping List"
+                onPress={resetList()}
+            />
+      {shoppingList()}
     </View>
   );
 }

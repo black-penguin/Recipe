@@ -13,16 +13,16 @@ export default function Home({ navigation }) {
                 style={styles.nav}
                 onPress={() => navigation.navigate('RecList',{ data: customData}
               )} />
-            <Button
+            {/* <Button
                 title="Shopping"
                 style={styles.nav}
-                onPress={() => navigation.navigate('Shopping')}
-            />
-            <Button
+                onPress={() => navigation.navigate('Shopping'
+              )}/> */}
+            {/* <Button
                 title="email"
                 style={styles.nav}
                 onPress={() => navigation.navigate('Email')}
-            />
+            /> */}
         </ImageBackground>
   );
 }
